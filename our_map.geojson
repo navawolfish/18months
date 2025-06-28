@@ -1,0 +1,538 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Zach's House",
+                "notes": "Where it all started! I remember asking Yael to borrow a subtly slutty but also shabbat appropriate top. I really wanted you to think I was cute!",
+                "type": "house"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.4678123340638,
+                    43.79413335842557
+                ],
+                "type": "Point"
+            },
+            "id": 1
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "My Old Apartment",
+                "notes": "Thanks for killing all the cockroaches we would find here I really appreciate it.",
+                "type": "house"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.40628232467338,
+                    43.64678010702988
+                ],
+                "type": "Point"
+            },
+            "id": 1
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Your Old Apartment",
+                "notes": "",
+                "type": "house"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.37450689690175,
+                    43.65728484440916
+                ],
+                "type": "Point"
+            },
+            "id": 2
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Your Apartment",
+                "notes": "We met Jade here!",
+                "type": "house"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.37474457418222,
+                    43.65504110799469
+                ],
+                "type": "Point"
+            },
+            "id": 3
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "My Apartment",
+                "notes": "",
+                "type": "house"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.3773028019783,
+                    43.67201872501707
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Evergreen Brickworks",
+                "notes": "i.e. beberdeen bitborts",
+                "type": "park"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.3653397558493,
+                    43.684320357035176
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rogers Centre",
+                "notes": "go jays go jays go jays",
+                "type": "baseball"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.38914885063616,
+                    43.64158771334485
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Aifam",
+                "notes": "I remember that one time I was really busy and you came back with an Aifam sandwich and foccacia and it made my day!",
+                "type": "food"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.40349536916449,
+                    43.662889462918685
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Piano Piano",
+                "notes": "Impromptu lunch date taking advantage of the 36$ lunch special was a perfect procrastination",
+                "type": "food"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.40290129102668,
+                    43.66301156500174
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Trinity Common",
+                "notes": "The first day we went out and Zach asked me if we hooked up and I was like no why do you say that... and thats when I knew you also had a crush on me",
+                "type": "pub"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.40276461765698,
+                    43.656760320557765
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bistro 422",
+                "notes": "I love you <3",
+                "type": "pub"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.40697557581217,
+                    43.656814135272185
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Your New Apartment",
+                "notes": "stay tuned!",
+                "type": "house"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39714526886343,
+                    43.64986440583505
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Distillery District",
+                "notes": "You took me on a date here to see the lights and I was so tired that day. We went home and watched princess bride",
+                "type": "date"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.35868026940629,
+                    43.65043051901219
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sugo",
+                "notes": "We went here for our 2 months date and it felt like we had been dating for so long",
+                "type": "pasta"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.44235547635321,
+                    43.65854361623481
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "KOKO Share Bar",
+                "notes": "Go-to for dinner with Noa and Asher",
+                "type": "food"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39166197481522,
+                    43.67092212121145
+                ],
+                "type": "Point"
+            },
+            "id": 14
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Utsav",
+                "notes": "Best indian food!",
+                "type": "food"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39077855863178,
+                    43.6711426157361
+                ],
+                "type": "Point"
+            },
+            "id": 15
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Campechano",
+                "notes": "you are the worst navigator ever! At least it was a nice walk.",
+                "type": "taco"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.40076732944352,
+                    43.64579275184303
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Burrito Boyz",
+                "notes": "BOGO burritos on Mondays before I go watch you destroy at basketball",
+                "type": "burrito"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.37846290041827,
+                    43.65633065286866
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Anejo",
+                "notes": "Happy hour margs!",
+                "type": "taco"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39998912379684,
+                    43.644587577133706
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Yuk Yuk's",
+                "notes": "throuple date with zach gross",
+                "type": "date"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.38830596746517,
+                    43.6497638427588
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Maddy",
+                "notes": "We tried to get in here on st patty's and failed epically BUT had such a nice long walk I didn't even care",
+                "type": "date"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.40338555930994,
+                    43.66807197198057
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Resource Library",
+                "notes": "studying for exams side by side",
+                "type": "library"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.3871018511529,
+                    43.67170914156648
+                ],
+                "type": "Point"
+            },
+            "id": 21
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Burlington",
+                "notes": "remember when we were parents for a day",
+                "type": "date"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.80034487393465,
+                    43.31976583638385
+                ],
+                "type": "Point"
+            },
+            "id": 22
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Art Gallery of Ontario",
+                "notes": "Where our ACTUAL first date was",
+                "type": "date"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39256654191789,
+                    43.65362459341125
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Salus",
+                "notes": "For the best lunches after a night at yours",
+                "type": "food"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.37948675300133,
+                    43.652709770072704
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ramen Isshin",
+                "notes": "Where you THINK our first date was",
+                "type": "food"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.40284305157138,
+                    43.64729904142868
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "General Assembly Pizza",
+                "notes": "Date Night!",
+                "type": "pizza"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39304707314456,
+                    43.64714593507887
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hillel UofT",
+                "notes": "You came here for havdallah the night after we met with zach gross",
+                "type": "jewish"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.40088432474937,
+                    43.663372635304086
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hillel TMU",
+                "notes": "so many fun shabbat dinners",
+                "type": "jewish"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.38206123060297,
+                    43.65966244859291
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Makom",
+                "notes": "we are so jewish!",
+                "type": "jewish"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.40609938866544,
+                    43.65694472209776
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Amal",
+                "notes": "1 year date spot and your dad sent us cocktails",
+                "type": "food"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39248098565463,
+                    43.66863189059214
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Black Canary Espresso Bar",
+                "notes": "We sat here for hours and I made your notion only for you to delete it in a fit of rage :(",
+                "type": "date"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.36831416234654,
+                    43.65179227273188
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Loose Moose",
+                "notes": "we went here with zach and shira lol!",
+                "type": "pub"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.38389126543278,
+                    43.64513655805473
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Met ",
+                "notes": "I'm better than you at pool",
+                "type": "pool"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.3779675945742,
+                    43.657877154958754
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Metro",
+                "notes": "The start of every good rice-tofu-veggies dinner",
+                "type": "food"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.37689599441465,
+                    43.65822537852378
+                ],
+                "type": "Point"
+            }
+        }
+    ]
+}
