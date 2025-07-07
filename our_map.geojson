@@ -312,7 +312,7 @@
             "properties": {
                 "name": "The Maddy",
                 "notes": "We tried to get in here on st patty's and failed epically BUT had such a nice long walk I didn't even care",
-                "type": "date"
+                "type": "pub"
             },
             "geometry": {
                 "coordinates": [
@@ -479,7 +479,7 @@
             "properties": {
                 "name": "The Black Canary Espresso Bar",
                 "notes": "We sat here for hours and I made your notion only for you to delete it in a fit of rage :(",
-                "type": "date"
+                "type": "coffee"
             },
             "geometry": {
                 "coordinates": [
@@ -524,12 +524,42 @@
             "properties": {
                 "name": "Metro",
                 "notes": "The start of every good rice-tofu-veggies dinner",
-                "type": "food"
+                "type": "grocery"
             },
             "geometry": {
                 "coordinates": [
                     -79.37689599441465,
                     43.65822537852378
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Butter and Blue",
+                "notes": "best hashbrown and egg milk buns",
+                "type": "coffee"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39264202698136,
+                    43.65564363924997
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Carlton Cinemas",
+                "notes": "the dude abides",
+                "type": "date"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.38158365164865,
+                    43.66156001257772
                 ],
                 "type": "Point"
             }
