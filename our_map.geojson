@@ -563,6 +563,37 @@
                 ],
                 "type": "Point"
             }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Light Cafe",
+                "notes": "Always get the mini pancakes. Happy birthday to me!",
+                "type": "pancakes"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39298414562414,
+                    43.65616966000777
+                ],
+                "type": "Point"
+            }
+        },
+                {
+            "type": "Feature",
+            "properties": {
+                "name": "Jon Yong Flower Market",
+                "notes": "You bought me the most beautiful bouquet of flowers here for my birthday",
+                "type": "flowers"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39647389857394,
+                    43.674211949708805
+                ],
+                "type": "Point"
+            }
         }
+
     ]
 }

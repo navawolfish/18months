@@ -12,17 +12,123 @@
 
 <body>
 
+    <!-- SVG SHAPES -->
+    <svg height="0" width="0" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <path id="blob-shape2"
+                d="M33.1,-33.1C46,-28.7,61.6,-21.1,69.8,-7.4C78.1,6.3,78.9,26.2,69.1,36.7C59.2,47.1,38.6,48.2,20.2,54.5C1.8,60.8,-14.4,72.4,-28.8,70.8C-43.2,69.2,-55.8,54.3,-65.1,37.8C-74.3,21.3,-80.3,3,-77.8,-14.2C-75.4,-31.5,-64.6,-47.9,-50.3,-52C-35.9,-56.2,-18,-48.2,-3.9,-43.5C10.1,-38.9,20.3,-37.5,33.1,-33.1Z"
+                transform="translate(100 100)" />
+
+            <path id="blob-shape3"
+                d="M33.5,-41.5C44.8,-30.4,56.3,-21.2,58.4,-10.2C60.5,0.9,53.1,13.7,46.3,27.9C39.4,42.1,33.1,57.7,21,65.4C8.9,73.2,-8.8,73.1,-26.9,68.7C-44.9,64.3,-63.3,55.8,-67.3,42.1C-71.2,28.5,-60.7,9.8,-57.5,-10.4C-54.2,-30.6,-58.1,-52.3,-49.8,-63.8C-41.4,-75.4,-20.7,-76.8,-4.8,-71.1C11.1,-65.4,22.2,-52.5,33.5,-41.5Z"
+                transform="translate(100 100)" />
+
+
+            <path id="blob-shape4"
+                d="M42.7,-62.2C57.3,-57.2,72.2,-48.5,77.6,-35.7C83.1,-22.9,79.1,-6.1,73.3,8.1C67.5,22.3,59.8,33.7,50.9,44.2C41.9,54.7,31.8,64.2,18.6,72.1C5.4,79.9,-10.9,86.1,-26.9,84.6C-42.9,83.1,-58.7,73.9,-67.8,60.4C-76.9,47,-79.3,29.4,-77.7,13.7C-76,-2,-70.2,-15.7,-63.5,-28.4C-56.7,-41,-49,-52.6,-38.2,-59.3C-27.5,-66.1,-13.7,-68,0.2,-68.3C14.1,-68.6,28.2,-67.2,42.7,-62.2Z"
+                transform="translate(100 100)" />
+
+            <path id="blob-shape5"
+                d="M39.6,-63.3C46.5,-49.6,44,-31.5,40,-18.9C36,-6.2,30.5,1,30.1,12.1C29.8,23.3,34.4,38.5,30.2,47.8C26,57.1,13,60.5,-0.9,61.8C-14.9,63.1,-29.8,62.3,-41.6,55.5C-53.4,48.7,-62.2,35.8,-69.5,20.8C-76.9,5.7,-83,-11.6,-77.4,-24C-71.7,-36.3,-54.4,-43.7,-39.6,-54.8C-24.7,-66,-12.4,-81,2,-83.8C16.4,-86.5,32.7,-77.1,39.6,-63.3Z"
+                transform="translate(100 100)" />
+        </defs>
+    </svg>
+
     <div class="title-box" id="tb1">
         <div class="title"> Places to Goon </div>
     </div>
     <div class="title-box" id="tb2">
         <div class="subtitle"> Izzy and Nava's Map of Toronto </div>
     </div>
-    <div class="blob-div">
-        <div id="map" class = "blob-div"> </div>
+
+
+
+    <!-- BLOBS -->
+    <div class="blob-div" style="z-index: 9;">
+        <div id="map" class="blob-div"> </div>
     </div>
+
+
+    <div class="blob-box" id="blob-div1">
+        <svg class="blob-hover" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <use href="#blob-shape2" class="blob-em" />
+        </svg>
+    </div>
+
+
+    <div class="blob-box" id="blob-div2">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <use href="#blob-shape4" class="blob-red" />
+        </svg>
+    </div>
+
+
+    <div class="blob-box" id="blob-div3">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <use href="#blob-shape2" class="blob-blue" />
+        </svg>
+    </div>
+
+
+    <div id="blob-div4">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <use href="#blob-shape3" class="blob-purple" />
+        </svg>
+    </div>
+
+    <div class="blob-box" id="blob-div5">
+        <svg class="blob-pink" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" >
+            <a href="blob_links/cat.html">
+            <use href="#blob-shape5" />
+            </a>
+        </svg>
+        <div class="hide-text" id="click-me2">
+            CLICK ME!
+        </div>
+    </div>
+
+    <div class="blob-box" id="blob-div6">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <use href="#blob-shape2" class="blob-pink" />
+        </svg>
+    </div>
+
+    <div class="blob-box" id="blob-div7">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <use href="#blob-shape5" class="blob-em" />
+        </svg>
+    </div>
+
+    <div id="blob-div8">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <use href="#blob-shape3" class="blob-red" />
+        </svg>
+    </div>
+
+    <div class="blob-box" id="blob-div9">
+        <svg class="blob-purple" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <a href="blob_links/card.html">
+                <use href="#blob-shape3" />
+            </a>
+        </svg>
+        <div class="hide-text" id="click-me1">
+            CLICK ME!
+        </div>
+    </div>
+
+    <div class="blob-box" id="blob-secret">
+        <a href="blob_links/cat.html">
+            <svg class="blob-secret" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <use href="#blob-shape2" />
+            </svg>
+            <div class="hide-text" id="secret">
+                SECRET! </div>
+        </a>
+    </div>
+
     <script src="script.js"></script>
-    <div class = "polygon" id = "blob2"></div>
+
+
 </body>
 
 

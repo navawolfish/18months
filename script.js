@@ -12,7 +12,7 @@ const map = new mapboxgl.Map({
 });
 
 // Load external GeoJSON file
-const geojsonURL = 'https://raw.githubusercontent.com/navawolfish/toronto-map/refs/heads/main/toronto.geojson'
+const geojsonURL = 'https://raw.githubusercontent.com/navawolfish/18months/refs/heads/main/our_map.geojson'
 const subtypeToEmoji = {
   "house": "🏠",
   "park": "🌳",
@@ -26,6 +26,11 @@ const subtypeToEmoji = {
   "pub": "🍺",
   "pool": "🎱",
   "pizza": "🍕",
+  "grocery": "🍎",
+  "coffee": "☕️",
+  "date": "👩‍❤️‍💋‍👨",
+  "pancakes": "🥞",
+  "flowers": "💐",
   "Default": "📍" // fallback
 };
 
@@ -52,8 +57,8 @@ fetch(geojsonURL)
         closeButton: true,
         closeOnClick: true
       })
-        .setHTML(`<div><div style = "font-size: 1.5em;">${emoji}</div>
-          <div class = "popuptitle">${feature.properties.title}</div>
+        .setHTML(`<div><div class = "popup-emoji">${emoji}</div>
+          <div class = "popuptitle">${feature.properties.name}</div>
           <div class = "inner-popup">${feature.properties.notes}</div>
         `);
 
@@ -62,7 +67,7 @@ fetch(geojsonURL)
         offset: 10,
         closeButton: false,
         closeOnClick: false
-      }).setText(`${feature.properties.name} (${type})`);
+      }).setHTML(`<div class = "hover-title">${feature.properties.name}</div><div class = "click-more">Click for more!</div>`);
 
       // Hover events
       el.addEventListener('mouseenter', () => {
@@ -99,3 +104,11 @@ fetch(geojsonURL)
 
 // Add zoom and rotation controls
 map.addControl(new mapboxgl.NavigationControl(), 'top-right');
+
+
+// for blobs
+document.querySelectorAll('.blob-purple').forEach(blob => {
+  if(blob.nextElementSibling && blob.nextElementSibling.classList.contains('hide-text')) {
+    blob.classList.add('has-hide-text-sibling');
+  }
+});

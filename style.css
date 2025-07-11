@@ -7,12 +7,19 @@
     --carnation-pink: #ff99c8;
     --amber: #ffbe0b;
     --red-munsell: #ef2e45;
-    --purple: #6622CC;
+    --purple: #8B51E1;
 }
 
 @font-face {
     font-family: 'high-speed';
     src: url('fonts/high_speed_3/High Speed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'handwriting';
+    src: url('fonts/handwriting.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -40,8 +47,10 @@
 
 body {
     margin: 0;
+    padding: 10%;
     background-color: var(--amber);
     background-size: cover;
+    overflow: hidden;
 }
 
 h1 {
@@ -63,6 +72,7 @@ h1 {
     display: inline-block;
     /* or 'block' */
     white-space: nowrap;
+    box-shadow: var(--yinmn-blue) 0px 0px 10px;
 }
 
 #tb1 {
@@ -72,6 +82,8 @@ h1 {
     border: 8px solid var(--carnation-pink);
     left: 90%;
     bottom: 70%;
+    overflow: hidden;
+    z-index: 10;
 }
 
 #tb2 {
@@ -81,6 +93,8 @@ h1 {
     border: 8px solid var(--emerald);
     left: 84%;
     bottom: 65%;
+    overflow: hidden;
+    z-index: 10;
 }
 
 .title {
@@ -105,6 +119,12 @@ h1 {
     text-shadow: 1px 1px 1px var(--emerald);
 }
 
+
+
+
+
+
+
 /* MAP */
 
 #map {
@@ -113,14 +133,14 @@ h1 {
     top: -10%;
     max-width: 100%;
     height: 100%;
-    border: 8px solid var(--yinmn-blue)
+    border: 8px solid var(--yinmn-blue);
+    z-index: 10;
 }
 
 
-/* BLOB */
 .blob-div {
     width: 800px;
-    height: 600px;
+    height: 550px;
     background-color: var(--red-munsell);
     /* amber blob */
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -143,26 +163,266 @@ h1 {
     clip-path: polygon(66% 0, 83% 32%, 100% 59%, 75% 100%, 29% 91%, 5% 65%, 10% 20%);
 }
 
-#blob1 {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
 
+
+
+
+
+
+/* BLOB */
+.blob-em {
+    fill: var(--emerald);
+    stroke-width: 2px;
 }
 
-#blob2 {
-    border-radius: 100% 40% 30% 70% 20% 60% / 60% 30% 70% 40% 40% 20%;
-
+.blob-em:hover {
+    fill: var(--purple);
 }
+
+#blob-div1 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#blob-div2 {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    top: 100%;
+    left: 60%;
+    transform: rotate(45deg) translate(-50%, -50%);
+    z-index: 15;
+}
+
+.blob-pink {
+    fill: var(--carnation-pink);
+}
+
+.blob-pink:hover {
+    fill: var(--yinmn-blue);
+}
+
+#blob-div3 {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 40%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.blob-blue {
+    fill: var(--yinmn-blue);
+}
+
+.blob-blue:hover {
+    fill: var(--red-munsell);
+}
+
+#blob-div4 {
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    top: 0%;
+    left: 98%;
+    z-index: 1;
+}
+
+.blob-purple {
+    fill: var(--purple);
+}
+
+.blob-purple:hover {
+    fill: var(--carnation-pink);
+}
+
+.blob-red {
+    fill: var(--red-munsell);
+}
+
+.blob-red:hover {
+    fill: var(--carnation-pink);
+}
+
+#blob-div5 {
+    position: absolute;
+    width: 700px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    top: -60%;
+    left: 50%;
+    z-index: 2;
+}
+
+#blob-div6 {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 100%;
+    z-index: 1;
+}
+
+#blob-div7 {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    top: 90%;
+    left: 35%;
+    z-index: 1;
+}
+
+#blob-div8 {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+    top: -15%;
+    left: 15%;
+    z-index: 1;
+}
+
+#blob-div9 {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 10%;
+    z-index: 1;
+}
+
+#blob-secret {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    top: 90%;
+    left: 85%;
+    z-index: 20;
+}
+
+/* BLOB SECRET */
+.blob-secret {
+    fill: var(--amber);
+}
+
+.blob-secret:hover {
+    fill: var(--red-munsell);
+}
+
+.blob-secret:hover+.hide-text {
+    display: block;
+}
+
+#secret {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(10deg);
+    font-family: "high-speed";
+    font-size: 12px;
+    color: var(--amber);
+    z-index: 100;
+    text-shadow: 1px 1px 1px var(--carnation-pink);
+}
+
+/* BLOB TEXT */
+.blob-purple:hover+.hide-text {
+    display: block;
+}
+
+.blob-pink:hover+.hide-text {
+    display: block;
+}
+
+
+.hide-text {
+    display: none;
+}
+
+
+#click-me1 {
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    font-family: "handwriting";
+    font-size: 30px;
+    color: var(--purple);
+    z-index: 100;
+    text-shadow: 1px 1px 1px var(--yinmn-blue);
+}
+
+
+
+
+
+
+
 
 /* POPUPS */
 
 .popuptitle {
-    font-family: "sans-serif";
-    font-size: 12px;
+    position: relative;
+    margin-top: 10px;
+    font-family: "handwriting";
+    font-size: 26px;
+    color: var(--yinmn-blue);
     text-transform: "uppercase";
+    text-shadow: 1px 1px 1px var(--emerald);
 }
 
 .inner-popup {
-    font-family: "mont";
-    font-size: 10px;
-    color: var(--ochre);
+    position: relative;
+    font-family: "handwriting";
+    font-size: 20px;
+    color: var(--red-munsell);
+    text-shadow: 1px 1px 1px var(--carnation-pink);
+}
+
+
+.mapboxgl-popup {
+    max-width: 100px;
+}
+
+.mapboxgl-popup-content {
+    border: 4px solid var(--yinmn-blue);
+    border-radius: 8px;
+    background-color: var(--amber);
+}
+
+.mapboxgl-popup-tip {
+    display: none;
+}
+
+.hover-title {
+    font-family: "handwriting";
+    font-size: 20px;
+    color: var(--yinmn-blue);
+    text-transform: "uppercase";
+}
+
+.click-more {
+    position: relative;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: -10px;
+    font-size: 14px;
+    color: var(--red-munsell);
+    font-family: "handwriting";
+}
+
+.popup-emoji {
+    font-size: 16px;
+    text-shadow: 1px 1px 1px var(--yinmn-blue);
 }

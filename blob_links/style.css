@@ -1,0 +1,229 @@
+/* style.css */
+
+:root {
+    /* HEX Colors */
+    --yinmn-blue: #345995;
+    --emerald: #2cda9d;
+    --carnation-pink: #ff99c8;
+    --amber: #ffbe0b;
+    --red-munsell: #ef2e45;
+    --purple: #8B51E1;
+}
+
+@font-face {
+    font-family: 'high-speed';
+    src: url('../fonts/high_speed_3/High Speed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'handwriting';
+    src: url('../fonts/handwriting.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ANIMATIONS */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+body {
+    margin: 0;
+    padding: 10%;
+    background-color: var(--amber);
+    background-size: cover;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'high-speed', sans-serif;
+    color: #8131cc;
+    font-size: 60px;
+}
+
+
+
+
+
+/* BLOB */
+.blob-em {
+    fill: var(--emerald);
+    stroke-width: 2px;
+}
+
+.blob-em:hover {
+    fill: var(--purple);
+}
+
+.blob-pink {
+    fill: var(--carnation-pink);
+}
+
+
+.blob-blue {
+    fill: var(--yinmn-blue);
+}
+
+.blob-blue:hover {
+    fill: var(--red-munsell);
+}
+
+.blob-purple {
+    fill: var(--purple);
+}
+
+.blob-red {
+    fill: var(--red-munsell);
+}
+
+
+
+
+
+
+
+
+/* CARD BLOB */
+.blob-div {
+    width: 900px;
+    height: 550px;
+    background-color: var(--red-munsell);
+    /* amber blob */
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    /* irregular blob shape */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+#card-text {
+    font-family: 'handwriting';
+    font-size: 20px;
+    fill: var(--amber);
+    text-shadow: 0.5px 0px 1px var(--yinmn-blue);
+    z-index: 100;
+}
+
+.blob-box {
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    width: 100%;
+    height: 100%;
+}
+
+#backing {
+    z-index: 10;
+    background-color: var(--emerald);
+    transform: translate(-7%, 7%);
+}
+
+#card {
+    z-index: 11;
+}
+
+
+
+
+
+
+/* BACK BUTTON */
+.back-button {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 170px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    font-family: 'handwriting';
+    font-size: 20px;
+    color: var(--yinmn-blue);
+    overflow: visible;
+    z-index: 100;
+}
+
+.back-button-blob {
+    fill: var(--yinmn-blue);
+    stroke-width: 2px;
+}
+
+.back-button-blob:hover {
+    fill: var(--carnation-pink);
+}
+
+#back-text {
+    transform: rotate(-10deg);
+    font-family: 'handwriting';
+    font-size: 150px;
+    fill: var(--amber);
+    text-shadow: 1px 1px 1px var(--red-munsell);
+}
+#back {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* PICS */
+.pic-box {
+    stroke-width: 5
+}
+
+#pic1 {
+    position: absolute;
+    top: 65%;
+    left: 70%;
+    width: 200px;
+    height: 200px;
+    z-index: 20;
+    transform: rotate(-15deg)
+}
+
+#pic2 {
+    position: absolute;
+    top: 53%;
+    left: 75%;
+    width: 200px;
+    height: 200px;
+    z-index: 19;
+}
+
+
+
+/* BAGEL */
+#bagel-full {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('cats/bagel1.JPG');
+    background-size: cover;
+    background-position: center;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
