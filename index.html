@@ -44,7 +44,7 @@
 
 
     <!-- BLOBS -->
-    <div class="blob-div" style="z-index: 9;">
+    <div class="blob-div" style="z-index: 20;">
         <div id="map" class="blob-div"> </div>
     </div>
 
@@ -64,9 +64,14 @@
 
 
     <div class="blob-box" id="blob-div3">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <use href="#blob-shape2" class="blob-blue" />
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="no-pointer">
+            <a href="blob_links/cat.html">
+                <use href="#blob-shape2" class="blob-blue pointer-shape" />
+            </a>
         </svg>
+        <div class = "hide-text" id="click-me2">
+            CLICK ME!
+        </div>
     </div>
 
 
@@ -77,14 +82,9 @@
     </div>
 
     <div class="blob-box" id="blob-div5">
-        <svg class="blob-pink" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" >
-            <a href="blob_links/cat.html">
-            <use href="#blob-shape5" />
-            </a>
+        <svg width="400px" viewBox="0 10 200 200" xmlns="http://www.w3.org/2000/svg" class = "no-pointer">
+            <use href="#blob-shape5" class="blob-pink pointer-shape" />
         </svg>
-        <div class="hide-text" id="click-me2">
-            CLICK ME!
-        </div>
     </div>
 
     <div class="blob-box" id="blob-div6">
@@ -95,7 +95,7 @@
 
     <div class="blob-box" id="blob-div7">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <use href="#blob-shape5" class="blob-em" />
+            <use href="#blob-shape5" class="blob-blue" />
         </svg>
     </div>
 
@@ -106,14 +106,14 @@
     </div>
 
     <div class="blob-box" id="blob-div9">
-        <svg class="blob-purple" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <a href="blob_links/card.html">
-                <use href="#blob-shape3" />
-            </a>
-        </svg>
-        <div class="hide-text" id="click-me1">
-            CLICK ME!
-        </div>
+        <a href="blob_links/card.html">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="no-pointer">
+                <use href="#blob-shape3" class="blob-purple pointer-shape" />
+            </svg>
+            <div class="hide-text" id="click-me1">
+                CLICK ME!
+            </div>
+        </a>
     </div>
 
     <div class="blob-box" id="blob-secret">
@@ -124,6 +124,12 @@
             <div class="hide-text" id="secret">
                 SECRET! </div>
         </a>
+    </div>
+
+    <div class="blob-box" id="blob-div10">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <use href="#blob-shape4" class="blob-em" />
+        </svg>
     </div>
 
     <script src="script.js"></script>

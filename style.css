@@ -135,19 +135,22 @@ h1 {
     height: 100%;
     border: 8px solid var(--yinmn-blue);
     z-index: 10;
+    overflow: hidden;
+    pointer-events: auto;
 }
 
 
 .blob-div {
-    width: 800px;
-    height: 550px;
+    width: 900px;
+    height: 600px;
     background-color: var(--red-munsell);
     /* amber blob */
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     /* irregular blob shape */
     position: absolute;
-    top: 100px;
+    top: 125px;
     left: 100px;
+    pointer-events: none; /* disables interaction on the blob as a whole */
 }
 
 .mapboxgl-ctrl-top-right {
@@ -196,7 +199,7 @@ h1 {
     top: 100%;
     left: 60%;
     transform: rotate(45deg) translate(-50%, -50%);
-    z-index: 15;
+    z-index: 50;
 }
 
 .blob-pink {
@@ -209,12 +212,12 @@ h1 {
 
 #blob-div3 {
     position: absolute;
-    width: 300px;
+    width: 400px;
     height: 200px;
     top: 40%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+    left: 70%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 2;
 }
 
 .blob-blue {
@@ -256,9 +259,9 @@ h1 {
     width: 700px;
     height: 50px;
     transform: translate(-50%, -50%);
-    top: -60%;
+    top: -20%;
     left: 50%;
-    z-index: 2;
+    z-index: 50;
 }
 
 #blob-div6 {
@@ -298,6 +301,16 @@ h1 {
     transform: translate(-50%, -50%);
     top: 70%;
     left: 10%;
+    z-index: 1;
+}
+
+#blob-div10 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%) rotate(15deg);
+    top: 10%;
+    left: 70%;
     z-index: 1;
 }
 
@@ -341,7 +354,7 @@ h1 {
     display: block;
 }
 
-.blob-pink:hover+.hide-text {
+.blob-blue:hover+.hide-text {
     display: block;
 }
 
@@ -350,6 +363,10 @@ h1 {
     display: none;
 }
 
+
+.blob-box svg:hover + .hide-text {
+    display: block;
+}
 
 #click-me1 {
     position: absolute;
@@ -363,10 +380,26 @@ h1 {
     text-shadow: 1px 1px 1px var(--yinmn-blue);
 }
 
+#click-me2 {
+    position: relative;
+    margin-top: -45%;
+    margin-left: 70%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    font-family: "handwriting";
+    font-size: 30px;
+    color: var(--amber);
+    z-index: 100;
+    text-shadow: 1px 1px 1px var(--carnation-pink);
+}
 
 
+.no-pointer {
+    pointer-events: none; /* disables interaction on the SVG as a whole */
+}
 
-
+.pointer-shape {
+    pointer-events: auto; /* re-enables it just on the shape */
+}
 
 
 

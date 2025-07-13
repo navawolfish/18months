@@ -5,7 +5,7 @@
             "type": "Feature",
             "properties": {
                 "name": "Zach's House",
-                "notes": "Where it all started! I remember asking Yael to borrow a subtly slutty but also shabbat appropriate top. I really wanted you to think I was cute!",
+                "notes": "Where it all started! I remember asking Yael to borrow a flattering but also shabbat appropriate top. I really wanted you to think I was cute!",
                 "type": "house"
             },
             "geometry": {
@@ -144,7 +144,7 @@
             "type": "Feature",
             "properties": {
                 "name": "Trinity Common",
-                "notes": "The first day we went out and Zach asked me if we hooked up and I was like no why do you say that... and thats when I knew you also had a crush on me",
+                "notes": "The first day we went out and thats when I knew you also had a crush on me",
                 "type": "pub"
             },
             "geometry": {
@@ -325,7 +325,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Resource Library",
+                "name": "Reference Library",
                 "notes": "studying for exams side by side",
                 "type": "library"
             },
@@ -579,7 +579,7 @@
                 "type": "Point"
             }
         },
-                {
+        {
             "type": "Feature",
             "properties": {
                 "name": "Jon Yong Flower Market",
@@ -590,6 +590,21 @@
                 "coordinates": [
                     -79.39647389857394,
                     43.674211949708805
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "University College Library",
+                "notes": "many a study session or 4hr long youtube session start here",
+                "type": "library"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39539701868202,
+                       43.663067728806524
                 ],
                 "type": "Point"
             }

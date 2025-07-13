@@ -104,11 +104,3 @@ fetch(geojsonURL)
 
 // Add zoom and rotation controls
 map.addControl(new mapboxgl.NavigationControl(), 'top-right');
-
-
-// for blobs
-document.querySelectorAll('.blob-purple').forEach(blob => {
-  if(blob.nextElementSibling && blob.nextElementSibling.classList.contains('hide-text')) {
-    blob.classList.add('has-hide-text-sibling');
-  }
-});
